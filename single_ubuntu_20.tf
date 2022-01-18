@@ -66,7 +66,7 @@ resource "openstack_compute_instance_v2" "Ubuntu20" {
   name = "terraform_Ubuntu20"
   # ID of JS-API-Featured-Ubuntu20-Latest
   image_id  = "8f27559a-9e63-4fb7-9704-09526793e2d2"
-  flavor_id   = "m1.medium"
+  flavor_id   = 3
   # this public key is set above in security section
   key_pair  = "wellsaar"
   security_groups   = ["terraform_ssh_ping, default"]
