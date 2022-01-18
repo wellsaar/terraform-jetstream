@@ -5,7 +5,7 @@
 ##**TODO:**
 
 #1: ubuntu 20
-> ✓ single_ubuntu_20.tf ✓
+> ✓ single_ubuntu_20.tf
 
 #2: centos 8
 
