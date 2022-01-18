@@ -6,10 +6,12 @@
 
 #1: ubuntu 20
 > single_ubuntu_20.tf ✓
-#2: centos 8
-#3: JSI-API Featured
 
-#4: set up 1 vm then 5-20 vm(s)
+#2: centos 8
+
+#3: set up 1 vm then 5-20 vm(s)
+
+#4 setup terraform docker images
 
 properly document the terraform code
 
