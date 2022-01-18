@@ -88,3 +88,13 @@ resource "openstack_compute_floatingip_associate_v2" "terraform_floatip1" {
   floating_ip = "${openstack_networking_floatingip_v2.terraform_floatip.address}"
   instance_id = "${openstack_compute_instance_v2.Ubuntu20.id}"
 }
+
+################
+#Output
+################
+
+
+output "floating_ip" {
+  value = openstack_networking_floatingip_v2.terraform_floatip.address
+  description = "Public IP for Ubuntu 20"
+}
