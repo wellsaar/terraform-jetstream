@@ -2,9 +2,10 @@
 
 #Jetstream terraform Friday 21st next week
 
-#TODO:
+##**TODO:**
 
 #1: ubuntu 20
+> single_ubuntu_20.tf ✓
 #2: centos 8
 #3: JSI-API Featured
 
