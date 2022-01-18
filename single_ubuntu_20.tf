@@ -69,7 +69,7 @@ resource "openstack_compute_instance_v2" "Ubuntu20" {
   flavor_id   = 3
   # this public key is set above in security section
   key_pair  = "wellsaar"
-  security_groups   = ["terraform_ssh_ping, default"]
+  security_groups   = ["terraform_ssh_ping", "default"]
 
   metadata = {
     terraform_controlled = "yes"
