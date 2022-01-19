@@ -8,8 +8,9 @@
 > ✓ single_ubuntu_20.tf
 
 #2: centos 8
+> ✓ single_centos8.tf
 
-#3: set up 1 vm then 5-20 vm(s)
+#3: 5-20 vm(s)
 
 #4 setup terraform docker images
 
