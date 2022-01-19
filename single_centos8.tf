@@ -25,18 +25,17 @@ resource "openstack_networking_floatingip_v2" "terraform_floatip" {
   pool = "public"
 }
 
-# assigning floating ip from public pool to Ubuntu20 VM
+# assigning floating ip from public pool to CentOS 8 VM
 resource "openstack_compute_floatingip_associate_v2" "terraform_floatcentos8" {
   floating_ip = "${openstack_networking_floatingip_v2.terraform_floatip.address}"
-  instance_id = "${openstack_compute_instance_v2.Ubuntu20.id}"
+  instance_id = "${openstack_compute_instance_v2.CentOS8.id}"
 }
 
 ################
 #Output
 ################
 
-
 output "floating_ip_centos8" {
   value = openstack_networking_floatingip_v2.terraform_floatip.address
-  description = "Public IP for Ubuntu 20"
+  description = "Public IP for CentOS 8"
 }
