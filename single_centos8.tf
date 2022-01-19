@@ -21,13 +21,13 @@ resource "openstack_compute_instance_v2" "CentOS8" {
   }
 }
 # creating floating ip from the public ip pool
-resource "openstack_networking_floatingip_v2" "terraform_floatip" {
+resource "openstack_networking_floatingip_v2" "terraform_floatip_centos8" {
   pool = "public"
 }
 
 # assigning floating ip from public pool to CentOS 8 VM
 resource "openstack_compute_floatingip_associate_v2" "terraform_floatcentos8" {
-  floating_ip = "${openstack_networking_floatingip_v2.terraform_floatip.address}"
+  floating_ip = "${openstack_networking_floatingip_v2.terraform_floatip_centos8.address}"
   instance_id = "${openstack_compute_instance_v2.CentOS8.id}"
 }
 
@@ -37,6 +37,6 @@ resource "openstack_compute_floatingip_associate_v2" "terraform_floatcentos8" {
 
 
 output "floating_ip_centos8" {
-  value = openstack_networking_floatingip_v2.terraform_floatip.address
+  value = openstack_networking_floatingip_v2.terraform_floatip_centos8.address
   description = "Public IP for CentOS 8"
 }
