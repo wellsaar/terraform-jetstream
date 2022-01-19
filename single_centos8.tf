@@ -35,6 +35,7 @@ resource "openstack_compute_floatingip_associate_v2" "terraform_floatcentos8" {
 #Output
 ################
 
+
 output "floating_ip_centos8" {
   value = openstack_networking_floatingip_v2.terraform_floatip.address
   description = "Public IP for CentOS 8"
