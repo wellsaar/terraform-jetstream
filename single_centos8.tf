@@ -19,6 +19,7 @@ resource "openstack_compute_instance_v2" "CentOS8" {
   network {
     name = "terraform_network"
   }
+  depends_on = [openstack_networking_network_v2.terraform_network]
 }
 # creating floating ip from the public ip pool
 resource "openstack_networking_floatingip_v2" "terraform_floatip_centos8" {
