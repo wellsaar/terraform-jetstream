@@ -13,6 +13,7 @@
 #3: 5-20 vm(s)
 
 #4 setup terraform docker images
+> ✓ docker branch setup with nginx
 
 properly document the terraform code
 
