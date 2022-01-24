@@ -11,6 +11,8 @@
 
 #3: 5-20 vm(s)
 
+> In Progress
+
 #4: setup terraform docker images
 > ✓ docker branch setup with nginx, need to apply with -target=vm first to setup the vm for the docker host
 
