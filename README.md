@@ -15,7 +15,5 @@
 > ✓ docker branch setup with nginx, need to apply with -target=vm first to setup the vm for the docker host
 
 #5: setup rocky 8 image
-prompt for creds
 
-# setup
-rocky 8
+#6: prompt for creds
