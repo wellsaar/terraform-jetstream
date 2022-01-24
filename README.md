@@ -1,6 +1,5 @@
 # terraform-jetstream
 
-#Jetstream terraform Friday 21st next week
 
 ##**TODO:**
 
@@ -12,16 +11,11 @@
 
 #3: 5-20 vm(s)
 
-#4 setup terraform docker images
-> ✓ docker branch setup with nginx
+#4: setup terraform docker images
+> ✓ docker branch setup with nginx, need to apply with -target=vm first to setup the vm for the docker host
 
-properly document the terraform code
-
+#5: setup rocky 8 image
 prompt for creds
-
-# setup docker containers
-docker container w terra
-k8s hello-world
 
 # setup
 rocky 8
