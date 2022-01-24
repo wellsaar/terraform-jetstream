@@ -1,7 +1,7 @@
 # terraform-jetstream
 
 
-##**TODO:**
+**TODO:**
 
 #1: ubuntu 20
 > ✓ single_ubuntu_20.tf
