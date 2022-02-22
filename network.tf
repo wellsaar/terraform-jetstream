@@ -18,8 +18,8 @@ resource "openstack_networking_subnet_v2" "terraform_subnet1" {
 resource "openstack_networking_router_v2" "terraform_router" {
   name = "terraform_router"
   admin_state_up  = true
-  # id of public network at IU
-  external_network_id = "4367cd20-722f-4dc2-97e8-90d98c25f12e"
+  # id of public network at JS1/2
+  external_network_id = var.network_id
 }
 # setting up virtual router interface
 resource "openstack_networking_router_interface_v2" "terraform_router_interface_1" {

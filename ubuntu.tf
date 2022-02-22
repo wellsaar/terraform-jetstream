@@ -5,11 +5,11 @@
 # creating Ubuntu20 instance
 resource "openstack_compute_instance_v2" "Ubuntu20" {
   name = "terraform_Ubuntu20_${count.index}"
-  # ID of JS-API-Featured-Ubuntu20-Latest
-  image_id  = "8f27559a-9e63-4fb7-9704-09526793e2d2"
+  # ID of Featured-Ubuntu20
+  image_id  = var.image_id
   flavor_id   = 3
   # this public key is set above in security section
-  key_pair  = "wellsaar"
+  key_pair  = var.public_key
   security_groups   = ["terraform_ssh_ping", "default"]
   count     = var.vm_number
   metadata = {
