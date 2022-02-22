@@ -1,21 +1,5 @@
 # terraform-jetstream
 
+This is just an example of what terraform can do on Jetstream. This will create a network, create a vm based on which image you give it and add whichever public key you specify to the vm.
 
-**TODO:**
-
-#1: ubuntu 20
-> ✓ single_ubuntu_20.tf
-
-#2: centos 8
-> ✓ single_centos8.tf
-
-#3: 5-20 vm(s)
-
-> In Progress
-
-#4: setup terraform docker images
-> ✓ docker branch setup with nginx, need to apply with -target=vm first to setup the vm for the docker host
-
-#5: setup rocky 8 image
-
-#6: prompt for creds
+Please check the variables.tf file for more instructions.
